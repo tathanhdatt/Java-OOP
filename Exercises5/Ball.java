@@ -54,19 +54,22 @@ public class Ball {
   }
 
   public void move() {
-    x += xDelta;
-    y += yDelta;
+    this.x += this.xDelta;
+    this.y += this.yDelta;
   }
 
   public void reflectHorizontal() {
-    xDelta = -xDelta;
+    this.xDelta = -this.xDelta;
   }
 
   public void reflectVertical() {
-    yDelta = -yDelta;
+    this.yDelta = -this.yDelta;
   }
 
   public String toString() {
-    return String.format("Ball[(%.1f, %.1f), speed=(%.1f, %.1f)]", x, y, xDelta, yDelta);
+    return String.format(
+      "Ball[(%.1f, %.1f), speed=(%.1f, %.1f)]",
+      this.x, this.y, this.xDelta, this.yDelta
+    );
   }
 }

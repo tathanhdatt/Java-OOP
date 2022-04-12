@@ -3,8 +3,8 @@ public class Rectangle {
   private float width;
 
   Rectangle() {
-    length = 1.0f;
-    width = 1.0f;
+    this.length = 1.0f;
+    this.width = 1.0f;
   }
 
   Rectangle(float length, float width) {
@@ -29,14 +29,17 @@ public class Rectangle {
   }
 
   public double getArea() {
-    return length * width;
+    return this.length * this.width;
   }
 
   public double getPerimeter() {
-    return 2 * (length + width);
+    return 2 * (this.length + this.width);
   }
 
   public String toString() {
-    return "Rectangle[length=" + length + " ,width=" + width + "]";
+    return String.format(
+      "Rectangle[length=%.2f ,width=%.2f]",
+      this.length, this.width
+    );
   }
 }

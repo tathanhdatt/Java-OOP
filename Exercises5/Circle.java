@@ -2,7 +2,7 @@ public class Circle {
     private double radius;
 
     Circle() {
-        radius = 1.0;
+        this.radius = 1.0;
     }
 
     Circle(double radius) {
@@ -18,14 +18,14 @@ public class Circle {
     }
 
     public double getArea() {
-        return Math.PI * radius * radius;
+        return Math.PI * this.radius * this.radius;
     }
 
     public double Circumference() {
-        return 2 * Math.PI * radius;
+        return 2 * Math.PI * this.radius;
     }
 
     public String toString() {
-        return "Circle[radius=" + radius + "]";
+        return "Circle[radius=" + this.radius + "]";
     }
 }

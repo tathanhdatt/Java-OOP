@@ -40,7 +40,9 @@ public class InvoiceItem {
   }
 
   public String toString() {
-    return "InvoiceItem[id=" + id + ", desc=" + desc
-      + ", qty=" + ", unitPrice=" + unitPrice + "]";
+    return String.format(
+      "InvoiceItem[id=%s, desc=%s, qty=%d, unitPrice=%.2f]",
+      this.id, this.desc, this.qty, this.unitPrice
+    );
   }
 }

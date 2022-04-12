@@ -53,24 +53,24 @@ public class Time {
   }
 
   public Time nextSecond() {
-    second = (second == 59) ? 0 : (second + 1);
-    if (second == 0) {
-      minute = minute == 59 ? 0 : (minute + 1);
+    this.second = (this.second == 59) ? 0 : (this.second + 1);
+    if (this.second == 0) {
+      this.minute = this.minute == 59 ? 0 : (this.minute + 1);
     }
-    if (minute == 0 && second == 0) {
-      hour = hour == 23 ? 0 : (hour + 1);
+    if (this.minute == 0 && this.second == 0) {
+      this.hour = this.hour == 23 ? 0 : (this.hour + 1);
     }
 
     return this;
   }
 
   public Time previousSecond() {
-    second = (second == 0) ? 59 : (second - 1);
-    if (second == 59) {
-      minute = minute == 0 ? 59 : (minute - 1);
+    this.second = (this.second == 0) ? 59 : (this.second - 1);
+    if (this.second == 59) {
+      this.minute = this.minute == 0 ? 59 : (this.minute - 1);
     }
-    if (minute == 59 && second == 59) {
-      hour = hour == 0 ? 23 : (hour - 1);
+    if (this.minute == 59 && this.second == 59) {
+      this.hour = this.hour == 0 ? 23 : (this.hour - 1);
     }
 
     return this;

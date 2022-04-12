@@ -6,7 +6,7 @@ public class Account {
   public Account(String id, String name) {
     this.id = id;
     this.name = name;
-    balance = 0;
+    this.balance = 0;
   }
 
   public Account(String id, String name, int balance) {
@@ -28,30 +28,33 @@ public class Account {
   }
 
   public int credit(int amount) {
-    balance += amount;
-    return balance;
+    this.balance += amount;
+    return this.balance;
   }
 
   public int debit(int amount) {
-    if (amount <= balance) {
-      balance -= amount;
+    if (amount <= this.balance) {
+      this.balance -= amount;
     } else {
       System.out.println("Amount exceeded balance");
     }
-    return balance;
+    return this.balance;
   }
 
   public int transferTo(Account another, int amount) {
-    if (amount <= balance) {
+    if (amount <= this.balance) {
       another.credit(amount);
       this.debit(amount);
     } else {
       System.out.println("Amount exceeded balance");
     }
-    return balance;
+    return this.balance;
   }
 
   public String toString() {
-    return "Account[id=" + id + ", name=" + name + ", balance=" + balance + "]";
+    return String.format(
+      "Account[id=%s, name=%s, balance=%d]",
+      this.id, this.name, this.balance
+    );
   }
 }
