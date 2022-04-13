@@ -41,6 +41,7 @@ public class Book {
     this.qty = qty;
   }
 
+  @Override
   public String toString() {
     return String.format(
       "Book[name=%s, Author[name%s, email=%s, gender=%s], price=%.2f, qty=%d]",

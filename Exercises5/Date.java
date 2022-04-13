@@ -39,6 +39,7 @@ public class Date {
     this.year = year;
   }
 
+  @Override
   public String toString() {
     String day = this.day < 10 ?
       String.format("0%d", this.day) :

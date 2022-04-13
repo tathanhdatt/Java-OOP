@@ -51,6 +51,7 @@ public class Account {
     return this.balance;
   }
 
+  @Override
   public String toString() {
     return String.format(
       "Account[id=%s, name=%s, balance=%d]",

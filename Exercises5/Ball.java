@@ -66,6 +66,7 @@ public class Ball {
     this.yDelta = -this.yDelta;
   }
 
+  @Override
   public String toString() {
     return String.format(
       "Ball[(%.1f, %.1f), speed=(%.1f, %.1f)]",

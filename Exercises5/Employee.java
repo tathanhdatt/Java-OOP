@@ -44,6 +44,7 @@ public class Employee {
     return this.salary;
   }
 
+  @Override
   public String toString() {
     return String.format("Employee[id=%s, name=%s, salary=%d]",
       this.id, getName(), this.salary

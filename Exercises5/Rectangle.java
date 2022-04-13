@@ -36,6 +36,7 @@ public class Rectangle {
     return 2 * (this.length + this.width);
   }
 
+  @Override
   public String toString() {
     return String.format(
       "Rectangle[length=%.2f ,width=%.2f]",

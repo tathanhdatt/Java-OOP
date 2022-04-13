@@ -39,6 +39,7 @@ public class Time {
     this.second = second;
   }
 
+  @Override
   public String toString() {
     String hour = this.hour < 10 ?
       String.format("0%d", this.hour) :

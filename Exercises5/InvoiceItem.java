@@ -39,6 +39,7 @@ public class InvoiceItem {
     return unitPrice * qty;
   }
 
+  @Override
   public String toString() {
     return String.format(
       "InvoiceItem[id=%s, desc=%s, qty=%d, unitPrice=%.2f]",
