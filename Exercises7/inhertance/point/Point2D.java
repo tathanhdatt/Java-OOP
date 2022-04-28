@@ -1,4 +1,4 @@
-package point;
+package inhertance.point;
 
 public class Point2D {
   private float x;

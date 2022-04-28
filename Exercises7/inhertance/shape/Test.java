@@ -1,4 +1,4 @@
-package shape;
+package inhertance.shape;
 
 public class Test {
   public static void main(String[] args) {

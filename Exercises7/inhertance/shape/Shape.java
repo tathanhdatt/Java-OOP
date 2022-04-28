@@ -1,4 +1,4 @@
-package shape;
+package inhertance.shape;
 
 public class Shape {
   private String color;

@@ -1,4 +1,4 @@
-package point;
+package inhertance.point;
 
 public class Test {
   public static void main(String[] args) {
