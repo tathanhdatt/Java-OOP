@@ -5,7 +5,7 @@ public class TestCircle {
     // Test constructors and toString()
     Circle circle1 = new Circle(1.1);
     System.out.println(circle1);
-    Circle circle2 = new Circle();
+    circle.Circle circle2 = new Circle();
     System.out.println(circle2);
 
     // Test getter and setter
@@ -15,6 +15,6 @@ public class TestCircle {
 
     // Test getArea() and getCircumference()
     System.out.printf("Area is: %.2f%n", circle1.getArea());
-    System.out.printf("Circumference is: %.2f%n", circle1.Circumference());
+    System.out.printf("Circumference is: %.2f%n", circle1.getCircumference());
   }
 }

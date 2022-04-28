@@ -22,7 +22,7 @@ public class Circle {
         return Math.PI * radius * radius;
     }
 
-    public double Circumference() {
+    public double getCircumference() {
         return 2 * Math.PI * radius;
     }
 
